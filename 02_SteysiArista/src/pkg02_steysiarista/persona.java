@@ -14,17 +14,14 @@ public class persona {
     public void hablar () {
         System.out.println(nombre + " dice hola");
     }
-    public void orden () {
-        System.out.println(nombre + " levanto la mano");
-    }
     public void edad () {
         System.out.println(nombre + " tiene "+edad);
     }
     public void preguntar() {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Ingrese un nombre (Persona): ");
+        System.out.print("Ingrese un nombre: ");
         nombre = scanner.next();
-        System.out.print("Ingrese una edad (Edad): ");
+        System.out.print("Ingrese una edad: ");
         edad = scanner.nextInt();
         scanner.close();
     }
